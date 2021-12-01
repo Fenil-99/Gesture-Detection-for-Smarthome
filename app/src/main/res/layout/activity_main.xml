@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/v1"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/white"
+        android:text="@string/Choose_Gestures"
+        android:textSize="20sp" />
+    <View
+        android:id="@+id/v1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_above="@id/spin"/>
+
+    <Spinner
+        android:id="@+id/spin"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <View
+        android:id="@+id/v2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/spin" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v2"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/black"
+        android:padding="10sp"
+        android:text="@string/proceed"
+
+        android:textSize="20sp" />
+
+</RelativeLayout>
